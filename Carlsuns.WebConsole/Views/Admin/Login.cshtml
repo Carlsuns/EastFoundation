@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+@{Layout = null; }
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - 登录</title>
+    <link href="favicon.ico" rel="shortcut icon">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="gray-bg">
+
+    <div class="middle-box text-center loginscreen  animated fadeInDown">
+        <div>
+            <div>
+
+                <h1 class="logo-name">ICX</h1>
+
+            </div>
+            <h3>欢迎使用 ICX</h3>
+
+            <form class="m-t" role="form" action="Login">
+                <div class="form-group">
+                    <input class="form-control" placeholder="用户名" required="">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="密码" required="">
+                </div>
+                <button type="submit" class="btn btn-primary block full-width m-b">登 录</button>
+
+
+                <p class="text-muted text-center">
+                    <a href="login.html#">
+                        <small>忘记密码了？</small>
+                    </a>
+                </p>
+
+            </form>
+        </div>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+</body>
+</html>

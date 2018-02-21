@@ -1,0 +1,173 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "列表页";
+}
+<div class="container-fluid">
+    <div>
+        <div class="list-group" id="list-group">
+            <div class="list-group-item">
+                <a href="/Article/Detail"><h4>【神秘客315特别策划】哪家航空公司最让你泪流满面</h4></a>
+                <p class="text-muted">
+                    <small><a class="name" href="/user/170935" target="_blank" data-stat-click="zhufeed.wenzhangzuozhe.1.5063633">作者：二水水</a></small>
+                    <small>发布时间：2015-2-11</small>
+                    <small class="pull-right">
+                        点击量:<span class="badge">20</span>
+                    </small>
+                </p>
+                <p class="text-muted text-muted-content">
+                    从2014年12个月投诉率平均值来看，从高到低依次是东方航空、中国国航、南方航空和海南航空。
+                    海航2月份投诉率创造了四大航最高点。2月恰似去年春节客运高峰期，海航抗压能力有点差哦。
+                    从投诉率波动来看，海南航空、南方航空投诉率波动较大；国际航空、东方航空投诉率波动较小
+                </p>
+                <p class="text-muted">
+                    <span class="badge">
+                        <a href="/tag/%E6%96%87%E5%A8%B1" target="_blank">文娱</a>
+                    </span><span class="badge">
+                        <a href="/tag/%E7%BD%91%E7%BA%A2%E7%BB%8F%E6%B5%8E" target="_blank">网红经济</a>
+                    </span>
+                </p>
+            </div>
+            <div style="border: 1px solid #efefef;"></div>
+
+
+            <div class="list-group-item">
+                <a href="/Article/Detail"><h4>【神秘客315特别策划】哪家航空公司最让你泪流满面</h4></a>
+                <p class="text-muted">
+                    <small><a class="name" href="/user/170935" target="_blank" data-stat-click="zhufeed.wenzhangzuozhe.1.5063633">作者：二水水</a></small>
+                    <small>发布时间：2015-2-11</small>
+                    <small class="pull-right">
+                        点击量:<span class="badge">20</span>
+                    </small>
+                </p>
+                <p class="text-muted text-muted-content">
+                    从2014年12个月投诉率平均值来看，从高到低依次是东方航空、中国国航、南方航空和海南航空。
+                    海航2月份投诉率创造了四大航最高点。2月恰似去年春节客运高峰期，海航抗压能力有点差哦。
+                    从投诉率波动来看，海南航空、南方航空投诉率波动较大；国际航空、东方航空投诉率波动较小
+                </p>
+                <p class="text-muted">
+                    <span class="badge">
+                        <a href="/tag/%E6%96%87%E5%A8%B1" target="_blank">文娱</a>
+                    </span><span class="badge">
+                        <a href="/tag/%E7%BD%91%E7%BA%A2%E7%BB%8F%E6%B5%8E" target="_blank">网红经济</a>
+                    </span>
+                </p>
+            </div>
+            <div style="border: 1px solid #efefef;"></div>
+
+
+
+            <div class="list-group-item">
+                <a href="/Article/Detail"><h4>【神秘客315特别策划】哪家航空公司最让你泪流满面</h4></a>
+                <p class="text-muted">
+                    <small><a class="name" href="/user/170935" target="_blank">作者：二水水</a></small>
+                    <small>发布时间：2015-2-11</small>
+                    <small class="pull-right">
+                        点击量:<span class="badge">20</span>
+                    </small>
+                </p>
+                <p class="text-muted text-muted-content">
+                    从2014年12个月投诉率平均值来看，从高到低依次是东方航空、中国国航、南方航空和海南航空。
+                    海航2月份投诉率创造了四大航最高点。2月恰似去年春节客运高峰期，海航抗压能力有点差哦。
+                    从投诉率波动来看，海南航空、南方航空投诉率波动较大；国际航空、东方航空投诉率波动较小
+                </p>
+                <p class="text-muted">
+                    <span class="badge">
+                        <a href="/tag/%E6%96%87%E5%A8%B1" target="_blank">文娱</a>
+                    </span><span class="badge">
+                        <a href="/tag/%E7%BD%91%E7%BA%A2%E7%BB%8F%E6%B5%8E" target="_blank">网红经济</a>
+                    </span>
+                </p>
+            </div>
+            <div style="border: 1px solid #efefef;"></div>   
+        </div>
+
+        <div class="loading-more" data-stat-click="" onclick="AddListItem('#list-group')">
+            <!-- react-text: 723 -->浏览更多<!-- /react-text --><!-- react-text: 724 --> <!-- /react-text -->
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    function AddListItem(id) {
+        try {
+            var div_listGroup = $(id);
+
+            var div_listGroupItem = document.createElement("div");
+            div_listGroupItem.className = "list-group-item";
+            div_listGroup.append(div_listGroupItem);
+            //标题部分
+            {
+            var a_title = document.createElement("a");
+            a_title.href = "/Article/Detail";
+            div_listGroupItem.appendChild(a_title);
+
+            var h4_title = document.createElement("h4");
+            h4_title.innerText = "【神秘客315特别策划】哪家航空公司最让你泪流满面";
+            a_title.appendChild(h4_title);
+            }
+            //作者 发布时间部分
+            {
+                var p_pubInfo=document.createElement("p");
+                p_pubInfo.className = "text-muted";
+                div_listGroupItem.appendChild(p_pubInfo);
+
+                var small_author=document.createElement("small");
+                p_pubInfo.appendChild(small_author);
+
+                var a_author=document.createElement("a");
+                a_author.className="name";
+                a_author.href="/user/170935";
+                a_author.target="_blank";
+                a_author.innerText="作者：二水水";
+                small_author.appendChild(a_author);
+
+                var small_time=document.createElement("small");
+                small_time.innerText="发布时间：2015-2-11";
+                p_pubInfo.appendChild(small_time);
+
+                var small_click=document.createElement("small");
+                small_click.className="pull-right";
+                small_click.innerText="点击量:";
+                p_pubInfo.appendChild(small_click);
+
+                var span_click=document.createElement("span");
+                span_click.className="badge";
+                span_click.innerText="20";
+                small_click.appendChild(span_click);
+            }
+            //简要部分
+            var p_content = document.createElement("p");
+            p_content.className = "text-muted text-muted-content";
+            p_content.innerText = "从2014年12个月投诉率平均值来看，从高到低依次是东方航空、中国国航、南方航空和海南航空。海航2月份投诉率创造了四大航最高点。2月恰似去年春节客运高峰期，海航抗压能力有点差哦。从投诉率波动来看，海南航空、南方航空投诉率波动较大；国际航空、东方航空投诉率波动较小";
+            div_listGroupItem.appendChild(p_content);
+            //标签部分
+            {
+                var p_tag=document.createElement("p");
+                p_tag.className="text-muted";
+                div_listGroupItem.appendChild(p_tag);
+                for(var i=0;i<2;i++)
+                {
+                    var span_tag=document.createElement("span");
+                    span_tag.className = "badge";
+                    p_tag.appendChild(span_tag);
+
+                    var a_tag=document.createElement("a");
+                    a_tag.href="";
+                    a_tag.target="_blank";
+                    a_tag.innerText = "经济";
+                    span_tag.appendChild(a_tag);
+
+                }
+            }
+
+            var div_gapLine=document.createElement("div");
+            div_gapLine.style = "border: 1px solid #efefef;";
+            div_listGroup.append(div_gapLine);
+        }
+        catch (ex)
+        { alert(ex.message);}
+    }  
+
+</script>

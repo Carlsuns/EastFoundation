@@ -1,0 +1,339 @@
+﻿
+@media screen and (min-width: 600px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: "PingFang SC", "Lantinghei SC", "Helvetica Neue", "Helvetica", "Arial", "Microsoft YaHei", "微软雅黑", "STHeitiSC-Light", "simsun", "宋体", "WenQuanYi Zen Hei", "WenQuanYi Micro Hei", "sans-serif";
+}
+
+a {
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: none;
+    }
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    display: block;
+    max-width: 100%;
+    max-height: 600px;
+    height: 30rem;
+}
+
+.grand-img {
+    margin-bottom: -50px;
+    height: 30rem;
+}
+
+@media screen and (max-width: 600px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+    .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+        display: block;
+        max-width: 100%;
+        max-height: 600px;
+        height: auto;
+    }
+
+    .grand-img {
+        margin-bottom: -50px;
+        height: auto;
+    }
+}
+
+
+.grand-title {
+    height: 2.5rem;
+    line-height: 2.5rem;
+    color: #FFF;
+    text-decoration: none;
+    text-indent: 2em;
+    text-align: center;
+    filter: alpha(opacity=60);
+    opacity: 0.6;
+    background: rgba(0,0,0,.7);
+    background-color: #000;
+    border-color: #DEDEDE;
+    font-size: 16px;
+    font-family: "PingFang SC", "Lantinghei SC", "Helvetica Neue", "Helvetica", "Arial", "Microsoft YaHei", "微软雅黑", "STHeitiSC-Light", "simsun", "宋体", "WenQuanYi Zen Hei", "WenQuanYi Micro Hei", "sans-serif";
+}
+
+.thumbnail {
+    margin-bottom: 0px;
+}
+
+    .thumbnail > img,
+    .thumbnail a > img {
+        margin-right: auto;
+        margin-left: auto;
+        height: 25rem;
+    }
+
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active {
+    border-color: #428bca;
+}
+
+.thumbnail .caption {
+    padding: 9px;
+    color: #333;
+}
+
+.thumbnail-title {
+    height: 50px;
+    line-height: 25px;
+    color: #FFF;
+    text-decoration: none;
+    text-indent: 2em;
+    text-align: left;
+    background: rgba(0,0,0,.7);
+    background-color: #000;
+    border-color: #DEDEDE;
+    font-size: 13px;
+    font-family: "PingFang SC", "Lantinghei SC", "Helvetica Neue", "Helvetica", "Arial", "Microsoft YaHei", "微软雅黑", "STHeitiSC-Light", "simsun", "宋体", "WenQuanYi Zen Hei", "WenQuanYi Micro Hei", "sans-serif";
+}
+
+.group-title-bar {
+    background-color: #f9f9f9;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 1rem;
+}
+
+.group-title {
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.index-article-list ul {
+    list-style: none;
+    margin: 0,20px,0,0;
+    padding: 0px;
+    position: relative;
+}
+
+    .index-article-list ul li {
+        list-style: none;
+        border-bottom: 1px solid #e6e8eb;
+        padding-top: 0.5rem;
+        position: relative;
+        width: 100%;
+        height: 9rem;
+    }
+    .index-article-list ul li:hover {
+            background-color: #e6e8eb;
+            }
+
+
+
+
+.index-article-list .img-box {
+    background-color: #c3c3c3;
+    overflow: hidden;
+    padding: 0;
+    margin-right: 15px;
+}
+
+
+@media screen and (max-width: 600px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+    .index-article-list .img-box {
+        background-color: #c3c3c3;
+        overflow: hidden;
+        padding: 0;
+        margin-right: 15px;
+        max-width: 30%;
+    }
+}
+
+
+.index-article-list .img-box a {
+    display: block;
+}
+
+.index-article-list .img-box img {
+    -webkit-transition: .7s;
+    transition: .7s;
+    max-width: 100%;
+}
+
+    .index-article-list .img-box img:hover {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+
+.index-article-list .article-desc {
+    overflow: hidden;
+    padding: 0;
+    max-width: 65%;
+    height: 100%;
+}
+
+    .index-article-list .article-desc .info {
+        position: relative;
+        float: left;
+    }
+
+.index-article-list .info {
+    margin-bottom: 0px;
+    padding-bottom: 1rem;
+}
+
+.index-article-list .info-list-abtest {
+    position: relative;
+    width: auto;
+    float: left;
+}
+
+.index-article-list .user-info {
+    position: relative;
+    width: auto;
+    max-width: 150px;
+    float: left;
+}
+
+.index-article-list .time-div {
+    position: relative;
+    width: auto;
+    max-width: 150px;
+    float: left;
+    padding-right: 3rem;
+}
+
+.index-article-list .tags-list {
+    position: relative;
+    width: auto;
+    max-width: 150px;
+    float: left;
+}
+
+
+@media screen and (min-width: 600px) { /*当屏幕尺寸大于600px时，应用下面的CSS样式*/
+    .index-article-list .article-desc {
+        overflow: hidden;
+        padding: 0;
+        max-width: 65%;
+    }
+
+    .artilce-title {
+        font-size: 25px;
+    }
+}
+
+
+@media screen and (max-width: 600px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+    .index-article-list .article-desc {
+        overflow: hidden;
+        padding: 0;
+        max-width: 65%;
+    }
+
+    .abstract {
+        display: none;
+    }
+
+    .tags-list {
+        display: none;
+    }
+}
+
+
+.div-no-breakup {
+    float: left;
+    display: inline;
+}
+
+
+    .loading-more {
+        display: block;
+        width: 15rem;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        border-radius: 4px;
+        margin: 0 auto;
+        border: 1px solid #366df0;
+        text-align: center;
+        margin-top: 2.5rem;
+        color: #366df0;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+
+/*列表页的样式*/
+.container-fluid{
+padding-left:0px;
+}
+.list-group-item {
+    border:0;
+}
+
+ .list-group-item a {
+        color: #0F0F0F;
+}
+.badge a {
+  color: #fff;
+}
+.text-muted small{
+padding-right:5px;
+}
+.badge{
+margin-right:3px;
+}
+@media screen and (max-width: 600px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+    .text-muted-content {
+    display:none;
+    }
+}
+
+/*详细页的样式*/
+.article-detail-nav {
+    margin-top:1rem;
+    margin-bottom:0.5rem;
+}
+
+.article-detail-content {
+    border-top: 1px dotted #bebebe;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    line-height: 30px;
+    font-size:0.9rem;
+    *zoom:1;
+}
+
+
+@media screen and (max-width: 600px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+.notShowOnMobile {
+    display:none;
+    }
+
+
+.article-detail-content {
+    border-top: 1px dotted #bebebe;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    line-height: 30px;
+    *zoom:1;
+    font-size:1.8rem;
+}
+}
